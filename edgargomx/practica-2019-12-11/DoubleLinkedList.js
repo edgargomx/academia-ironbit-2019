@@ -22,6 +22,7 @@ class DoubleLinkedList {
         }
         this.currentNode = this.currentNode === null ? node : this.currentNode;
         this.list.add(node);
+        
     }
     prev(){
         this.currentNode = this.currentNode.prev !== null ? this.currentNode.prev : this.currentNode;
