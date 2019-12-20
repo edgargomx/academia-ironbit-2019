@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="module">
+        import '../phone-component.js';
+    </script>
+    <title>PhoneComponent</title>
+</head>
+<body>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .card {
+                width: 30%;
+                height: 500px;
+                padding: 10px;
+                color: #757575;
+                border-radius: 5px;
+                background-color: #fff;
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+            }
+    </style>
+    <div class="container">
+        <div class="card">
+            <phone-component></phone-component>
+            <button onClick="connected()" >Conectar cargador</button>
+            <button onClick="disconnected()">desconectar cargador</button>
+        </div>
+    </div>
+    <script>
+        connected = () =>{
+            console.log('connected');
+            document.querySelector('phone-component').shadowRoot.querySelector('battery-component').connected = true;
+        }
+
+        disconnected = () => {
+            console.log('disconnected')
+            document.querySelector('phone-component').shadowRoot.querySelector('battery-component').connected = false;
+        }
+    </script>
+</body>
+</html>
