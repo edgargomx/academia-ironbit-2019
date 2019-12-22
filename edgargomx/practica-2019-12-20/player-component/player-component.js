@@ -4,7 +4,8 @@ import style from './player-component-styles.js';
 class PlayerComponent extends LitElement {
   static get properties() {
     return {
-      status: { type: String }
+      status: { type: String },
+      src: {type: String}
     };
   }
 
@@ -15,12 +16,13 @@ class PlayerComponent extends LitElement {
   constructor() {
     super();
     this.status = 'stop';
+    this.src = null;
   }
 
   render() {
     return html`
         <audio id="audio" controls @play="${ this.playing }"  @pause="${ this.pause }">
-          <source type="audio/mp3" src="../Odisseo-Dias-de-Fuego.mp3">
+          <source type="audio/mp3" src="${ this.src }">
         </audio>
         
       `;

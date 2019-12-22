@@ -21,11 +21,21 @@ class PhoneComponent extends LitElement {
 
   render() {
     return html`
-        <div class="nav">
-          <battery-component connected="false"></battery-component>
-        </div>
-        <div class="container">
-          <player-component></player-component>
+        <div class="container border-gray">
+          <div class="nav">
+            <div class="item-nav">
+              ${ new Date().toDateString() }
+              </div>
+            <battery-component class="itme-nav" .connected="${ false}"></battery-component>
+          </div>
+          <div class="container">
+            <player-component src="../Odisseo-Dias-de-Fuego.mp3" .status="${ false }"></player-component>
+          </div>
+          <div class="footer">
+            <button  >Regresar</button>
+            <button  >Inicio</button>
+            <button  >cajon</button>
+          </div>
         </div>
         
         

@@ -16,48 +16,31 @@ export default css`
 }
 
 .battery-low {
-  display: inline-block;
-  width: 60px;
-  height: 64px;
-  text-align: center;
-  color: #43f578;
+  width: 50px;
+  height: 14px;
   background: rgb(218, 99, 20);
-  font-size: 30px;
-  line-height: 64px;
 }
 
 .battery-medium {
-  display: inline-block;
-  width: 60px;
-  height: 64px;
-  text-align: center;
-  color: #43f578;
+  width: 50px;
+  height: 14px;
   background: rgb(199, 241, 82);
-  font-size: 30px;
-  line-height: 64px;
 }
 
 .battery-high {
-  display: inline-block;
   width: 60px;
-  height: 64px;
-  text-align: center;
-  color: #43f578;
+  height: 14px;
   background: rgb(42, 223, 81);
-  font-size: 30px;
-  line-height: 64px;
 }
 
 .battery-container {
   display: inline-block;
   width: 180px;
-  height: 80px;
-  text-align: center;
-  border-color: #245a34;
+  height: 30px;
+  border-color: #606160;
   border-style: solid;
   border-width: medium;
-  font-size: 30px;
-  line-height: 64px;
+  font-size: 14px;
   padding: 5px;
   display: flex;
   flex-direction: row;

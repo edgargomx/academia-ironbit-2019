@@ -20,11 +20,37 @@ export default css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 400px;
+  
+}
+
+.border-gray {
+  border: grey 2px solid;
 }
 
 .nav {
   display: flex;
+  width: 100%;
   flex-direction: row;
-  justify-content: flex-end ;
-  align-items: flex-end;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  background-color: rgba(141, 140, 140);
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  background-color: rgba(141, 140, 140, 0.452);
+}
+
+.item-nav {
+  margin: 2px;
+}
+
+.btn {
+
 }`;
